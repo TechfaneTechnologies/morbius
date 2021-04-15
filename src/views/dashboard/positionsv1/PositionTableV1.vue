@@ -599,10 +599,10 @@ export default {
       this.$refs.PositionsTable.collapseAll()
     },
     onSelectAll(params) {
-      console.log(params)
+      // console.log(params)
     },
     onMouseover(params) {
-      console.log(params)
+      // console.log(params)
     },
     toggleExpansion(row) {
       if (this.showExpansion(row)) {
@@ -615,30 +615,30 @@ export default {
       return this.expandedIds.some(id => id === row.id)
     },
     sumQty(rowObj) {
-      // console.log(rowObj)
+      // // console.log(rowObj)
       let sum = 0
       for (let i = 0; i < rowObj.children.length; i += 1) {
         sum += rowObj.children[i].quantity
       }
-      // console.log('sumQty', sum)
+      // // console.log('sumQty', sum)
       return sum
     },
     sumPnl(rowObj) {
-      // console.log(rowObj)
+      // // console.log(rowObj)
       let sum = 0
       for (let i = 0; i < rowObj.children.length; i += 1) {
         sum += rowObj.children[i].pnl
       }
-      // console.log('sumPnl', sum)
+      // // console.log('sumPnl', sum)
       return sum
     },
     sumMtm(rowObj) {
-      // console.log(rowObj)
+      // // console.log(rowObj)
       let sum = 0
       for (let i = 0; i < rowObj.children.length; i += 1) {
         sum += rowObj.children[i].mtm
       }
-      // console.log('sumMtm', sum)
+      // // console.log('sumMtm', sum)
       return sum
     },
     // filterFn(data, filterString) {
@@ -648,29 +648,29 @@ export default {
     selectionChanged1(params) {
       // params.selectedRows - all rows that are selected (this page)
       this.rowSelection1 = params.selectedRows
-      // console.log('selection length', params.selectedRows.length, 'rows', params.selectedRows)
+      // // console.log('selection length', params.selectedRows.length, 'rows', params.selectedRows)
       // return params.selectedRows.length
     },
     onSelectAll1(params) {
       // params.selected - whether the select-all checkbox is checked or unchecked
       // params.selectedRows - all rows that are selected (this page)
       this.rowSelection1 = params.selectedRows
-      console.log('selection length', params.selectedRows.length, 'rows', params.selectedRows)
+      // console.log('selection length', params.selectedRows.length, 'rows', params.selectedRows)
     },
     selectAll2(selected, selectedRows) {
       // selected indicates whether select all
       // was selected or unselected
       this.rowSelection1 = selectedRows
-      console.log(selected, selectedRows)
+      // console.log(selected, selectedRows)
       // selectedRows contains all selected rows
     },
     toggleSelectRow1(params) {
       // row that was clicked
-      console.log(params.row)
+      // console.log(params.row)
       // index of page
-      console.log(params.pageIndex)
+      // console.log(params.pageIndex)
       // whether the row was selected or unselected
-      console.log(params.selected)
+      // console.log(params.selected)
     },
     toggleAutoSelectAll1() {
       this.rows.forEach(item => {
@@ -692,11 +692,11 @@ export default {
     },
     // exitAll() {
     //   const rowsdata = this.rowSelection
-    //   console.log('Exit: ', rowsdata.length, 'Data: ', JSON.stringify(rowsdata))
+    //   // console.log('Exit: ', rowsdata.length, 'Data: ', JSON.stringify(rowsdata))
     // },
     // convertAll() {
     //   const rowsdata = this.rowSelection
-    //   console.log('Convert: ', rowsdata.length, 'Data: ', JSON.stringify(rowsdata))
+    //   // console.log('Convert: ', rowsdata.length, 'Data: ', JSON.stringify(rowsdata))
     // },
     exitAll1() {
       this.$swal({
@@ -724,7 +724,7 @@ export default {
             },
           })
           const rowsdata1 = this.rowSelection1
-          console.log('Exit: ', rowsdata1.length, 'Data: ', JSON.stringify(rowsdata1))
+          // console.log('Exit: ', rowsdata1.length, 'Data: ', JSON.stringify(rowsdata1))
           this.toggleCustomSelection1()
         } else if (result.dismiss === 'cancel') {
           this.$swal({
@@ -735,7 +735,7 @@ export default {
               confirmButton: 'btn btn-success',
             },
           })
-          console.log('No Positions has been exited!')
+          // console.log('No Positions has been exited!')
           this.toggleCustomSelection1()
         }
       })
@@ -780,7 +780,7 @@ export default {
               },
             })
             const rowsdata1 = this.rowSelection1
-            console.log('Convert: ', this.convertval1.convert, 'Total Conversions: ', rowsdata1.length, 'Data: ', JSON.stringify(rowsdata1))
+            // console.log('Convert: ', this.convertval1.convert, 'Total Conversions: ', rowsdata1.length, 'Data: ', JSON.stringify(rowsdata1))
             this.convertval1 = ''
             this.toggleCustomSelection1()
           } else if (result.dismiss === 'cancel') {
@@ -792,7 +792,7 @@ export default {
                 confirmButton: 'btn btn-success',
               },
             })
-            console.log('No Positions has been converted!')
+            // console.log('No Positions has been converted!')
             this.convertval1 = ''
             this.toggleCustomSelection1()
           }

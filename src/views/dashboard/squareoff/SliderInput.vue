@@ -208,8 +208,8 @@ export default {
     },
     validationForm() {
       if (Boolean(this.ldot) && Boolean(this.rdot) && Boolean(this.broker.length >= 1) && !this.Squareoffactivestatus && this.Squareoffcancel) {
-        console.log('Squareoff Parameters Sent Successfully')
-        console.log('Broker: ', JSON.stringify(this.broker.map(({ title }) => title)), ',Minimum Value: ', this.ldot, '% ,Maximum Value: ', this.rdot, '%')
+        // console.log('Squareoff Parameters Sent Successfully')
+        // console.log('Broker: ', JSON.stringify(this.broker.map(({ title }) => title)), ',Minimum Value: ', this.ldot, '% ,Maximum Value: ', this.rdot, '%')
         this.Squareoffactivestatus = true
         this.Squareoffcancel = false
         this.ShowToast('success')
@@ -233,8 +233,8 @@ export default {
     },
     ValidationCancel() {
       if (this.Squareoffactivestatus && !this.Squareoffcancel) {
-        console.log('Squareoff Cancel Order Sent Successfully')
-        console.log('Broker: ', JSON.stringify(this.broker.map(({ title }) => title)), ',Minimum Value: ', this.ldot, '% ,Maximum Value: ', this.rdot, '%')
+        // console.log('Squareoff Cancel Order Sent Successfully')
+        // console.log('Broker: ', JSON.stringify(this.broker.map(({ title }) => title)), ',Minimum Value: ', this.ldot, '% ,Maximum Value: ', this.rdot, '%')
         this.Squareoffactivestatus = false
         this.Squareoffcancel = true
         this.ShowCancelToast('danger')

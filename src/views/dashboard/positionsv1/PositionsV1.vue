@@ -67,13 +67,13 @@ export default {
   },
   // mounted() {
   //   this.fetchData()
-  //   console.log('Positions Fetched')
+  //   // console.log('Positions Fetched')
   // },
   created() {
     // data
     this.$http.get('/positions/data')
       .then(response => { this.data = response.data })
-    // console.log(this.data)
+    // // console.log(this.data)
   },
   methods: {
     kFormatter,
@@ -121,7 +121,7 @@ export default {
       // data
       this.$http.get('/positions/data')
         .then(response => { this.data = response.data })
-      // console.log(this.data)
+      // // console.log(this.data)
     },
     fetchData() {
       setInterval(() => {

@@ -460,11 +460,11 @@ export default {
       return this.dir
     },
     mtmorpnlvalstate() {
-      // console.log(this.mtmpnlval)
+      // // console.log(this.mtmpnlval)
       return Boolean(this.mtmorpnlval)
     },
     mtmorpnlvalstate1() {
-      // console.log(this.mtmpnlval)
+      // // console.log(this.mtmpnlval)
       return Boolean(this.mtmorpnlval1)
     },
   },
@@ -503,8 +503,8 @@ export default {
           // eslint-disable-next-line
           // alert('form submitted!')
           if (!this.squareoffactivestatus && this.squareoffdisabled && Boolean(this.mtmorpnlval)) {
-            console.log('Squareoff Parameters Sent Successfully')
-            console.log('Minimum Value: ', this.lessthanval, ' ,Maximum Value: ', this.greaterthanval)
+            // console.log('Squareoff Parameters Sent Successfully')
+            // console.log('Minimum Value: ', this.lessthanval, ' ,Maximum Value: ', this.greaterthanval)
             this.squareoffactivestatus = true
             // this.squareoffdisabled1 = true
             this.squareoffcancel = false
@@ -521,8 +521,8 @@ export default {
           // eslint-disable-next-line
           // alert('form submitted!')
           if (!this.squareoffactivestatus1 && this.squareoffdisabled1 && Boolean(this.mtmorpnlval1)) {
-            console.log('Squareoff Parameters Sent Successfully')
-            console.log('Minimum Value1: ', this.lessthanval1, ' ,Maximum Value1: ', this.greaterthanval1)
+            // console.log('Squareoff Parameters Sent Successfully')
+            // console.log('Minimum Value1: ', this.lessthanval1, ' ,Maximum Value1: ', this.greaterthanval1)
             this.squareoffactivestatus1 = true
             // this.squareoffdisabled1 = true
             this.squareoffcancel1 = false
@@ -563,7 +563,7 @@ export default {
     },
     validationCancel() {
       if (this.squareoffactivestatus && !this.squareoffcancel) {
-        console.log('Squareoff Cancel Order Sent Successfully')
+        // console.log('Squareoff Cancel Order Sent Successfully')
         this.squareoffactivestatus = false
         // this.squareoffdisabled1 = true
         this.squareoffcancel = true
@@ -575,7 +575,7 @@ export default {
     },
     validationCancel1() {
       if (this.squareoffactivestatus1 && !this.squareoffcancel1) {
-        console.log('Squareoff Cancel Order Sent Successfully')
+        // console.log('Squareoff Cancel Order Sent Successfully')
         this.squareoffactivestatus1 = false
         // this.squareoffdisabled1 = true
         this.squareoffcancel1 = true

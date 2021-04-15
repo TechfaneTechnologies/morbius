@@ -301,8 +301,8 @@ export default {
           })
           // eslint-disable-next-line
           // alert('API Details Submitted.')
-          console.log('API Data Saved Successfully')
-          console.log(this.broker, ' => API ID: ', this.appname, ' ,API Key: ', this.apikey, ' ,API Secret: ', this.apisecret)
+          // console.log('API Data Saved Successfully')
+          // console.log(this.broker, ' => API ID: ', this.appname, ' ,API Key: ', this.apikey, ' ,API Secret: ', this.apisecret)
         }
       })
     },
@@ -323,8 +323,8 @@ export default {
           })
           // eslint-disable-next-line
           // alert('API Details Submitted.')
-          console.log('Web App Login Credentials Saved Succesfully')
-          console.log(this.broker, ' => User ID: ', this.userid, ' ,Password: ', this.passValue, ' ,TFA: ', this.tfa)
+          // console.log('Web App Login Credentials Saved Succesfully')
+          // console.log(this.broker, ' => User ID: ', this.userid, ' ,Password: ', this.passValue, ' ,TFA: ', this.tfa)
         }
       })
     },
@@ -357,15 +357,15 @@ export default {
     handleSubmit() {
       // Exit when the form isn't valid
       if (!this.checkFormValidity()) {
-        console.log('Invalid API Data')
-        console.log(this.broker, ' => API ID: ', this.appname, ' ,API Key: ', this.apikey, ' ,API Secret: ', this.apisecret)
+        // console.log('Invalid API Data')
+        // console.log(this.broker, ' => API ID: ', this.appname, ' ,API Key: ', this.apikey, ' ,API Secret: ', this.apisecret)
         return
       }
       // Push the name to submitted names
       // this.apidata.push(this.appname)
       // this.apidata.push(this.apikey)
       // this.apidata.push(this.apisecret)
-      // console.log(this.appname, this.apikey, this.apisecret)
+      // // console.log(this.appname, this.apikey, this.apisecret)
       // Hide the modal manually
       this.$nextTick(() => {
         this.$refs['zerodha-modal'].toggle('#addkiteapi')
@@ -374,8 +374,8 @@ export default {
     handleSubmit1() {
       // Exit when the form isn't valid
       if (!this.checkForm1Validity()) {
-        console.log('Invalid Web App Login Credentials')
-        console.log(this.broker, ' => User ID: ', this.userid, ' ,Password: ', this.passValue, ' ,TFA: ', this.tfa)
+        // console.log('Invalid Web App Login Credentials')
+        // console.log(this.broker, ' => User ID: ', this.userid, ' ,Password: ', this.passValue, ' ,TFA: ', this.tfa)
         return
       }
       this.$nextTick(() => {

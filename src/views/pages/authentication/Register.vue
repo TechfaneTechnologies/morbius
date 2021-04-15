@@ -7,7 +7,7 @@
         <vuexy-logo />
 
         <h2 class="brand-text text-primary ml-1">
-          Leverage
+          Morbius
         </h2>
       </b-link>
       <!-- /Brand logo-->
@@ -39,7 +39,7 @@
           class="px-xl-2 mx-auto"
         >
           <b-card-title class="mb-1">
-            Welcome to Leverage,
+            Welcome to Morbius,
             The Most Advanced Risk Management System for Trading ! 👋
             Adventure starts here 🚀
           </b-card-title>

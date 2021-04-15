@@ -239,7 +239,7 @@ export default {
     },
     CorrectTime() {
       const val = Boolean((Date.parse(`'01/01/2021 ${this.timevalue}`) > Date.parse('01/01/2021 9:15:00')) && (Date.parse(`'01/01/2021 ${this.timevalue}`) < Date.parse('01/01/2021 15:30:00')))
-      // console.log(this.minDat.toLocaleDateString(), this.timevalue, val)
+      // // console.log(this.minDat.toLocaleDateString(), this.timevalue, val)
       return val
     },
   },
@@ -268,8 +268,8 @@ export default {
       // d.toLocaleString();       // -> "2/1/2013 7:37:08 AM"
       // d.toLocaleDateString();   // -> "2/1/2013"
       // d.toLocaleTimeString();  // -> "7:38:05 AM"
-      // console.log(Date.parse(this.minDat.toLocaleDateString(), this.timevalue) <= Date.parse(this.minDat.toLocaleDateString(), '15:29:59'))
-      // console.log(this.minDat.toLocaleDateString(), this.timevalue)
+      // // console.log(Date.parse(this.minDat.toLocaleDateString(), this.timevalue) <= Date.parse(this.minDat.toLocaleDateString(), '15:29:59'))
+      // // console.log(this.minDat.toLocaleDateString(), this.timevalue)
     },
     SqrOffDateTime() {
       this.$swal({
@@ -331,11 +331,11 @@ export default {
     },
     yesno(variant) {
       const selectedbrokers = this.selectedBrokers.map(({ title }) => title)
-      console.log(selectedbrokers)
+      // console.log(selectedbrokers)
       if (variant === 'yes') {
-        console.log('The DateTime Squareoff Order has been sent to these brokers: ', JSON.stringify(this.selectedBrokers), 'Date: ', this.datevalue, ', Time: ', this.timevalue)
+        // console.log('The DateTime Squareoff Order has been sent to these brokers: ', JSON.stringify(this.selectedBrokers), 'Date: ', this.datevalue, ', Time: ', this.timevalue)
       } else {
-        console.log('The DateTime Squareoff Cancellation Order has been sent to these brokers: ', JSON.stringify(this.selectedBrokers), 'Date: ', this.datevalue, ', Time: ', this.timevalue)
+        // console.log('The DateTime Squareoff Cancellation Order has been sent to these brokers: ', JSON.stringify(this.selectedBrokers), 'Date: ', this.datevalue, ', Time: ', this.timevalue)
         // this.selectedBrokers = []
         // this.datevalue = ''
         // this.timevalue = ''
@@ -357,8 +357,8 @@ export default {
     },
     ValidationCancel2() {
       if (this.squareoffactivestatus2 && !this.squareoffcancel2) {
-        console.log('Squareoff Cancel Order Sent Successfully')
-        console.log('The DateTime Squareoff Cancellation Order has been sent to these brokers: ', JSON.stringify(this.selectedBrokers), 'Date: ', this.datevalue, ', Time: ', this.timevalue)
+        // console.log('Squareoff Cancel Order Sent Successfully')
+        // console.log('The DateTime Squareoff Cancellation Order has been sent to these brokers: ', JSON.stringify(this.selectedBrokers), 'Date: ', this.datevalue, ', Time: ', this.timevalue)
         this.squareoffactivestatus2 = false
         this.squareoffcancel2 = true
         this.ShowCancelToast2('danger')

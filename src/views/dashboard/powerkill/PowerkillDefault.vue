@@ -174,11 +174,11 @@ export default {
     },
     powerkill(variant) {
       const selectedbrokers = this.BrokerSelection.map(({ title }) => title)
-      console.log(selectedbrokers)
+      // console.log(selectedbrokers)
       if (variant === 'yes') {
-        console.log('PowerKilled at All Brokers: ', JSON.stringify(this.BrokerSelection))
+        // console.log('PowerKilled at All Brokers: ', JSON.stringify(this.BrokerSelection))
       } else {
-        console.log('PowerKilled Cancelled at All Brokers: ', JSON.stringify(this.BrokerSelection))
+        // console.log('PowerKilled Cancelled at All Brokers: ', JSON.stringify(this.BrokerSelection))
         this.BrokerSelection = []
       }
     },

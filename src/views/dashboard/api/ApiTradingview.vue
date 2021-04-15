@@ -212,8 +212,8 @@ export default {
           })
           // eslint-disable-next-line
           // alert('API Details Submitted.')
-          console.log('API Data Saved Successfully')
-          console.log(this.broker, ' => App Name: ', this.appname, ' ,User ID: ', this.userid, ' ,Password: ', this.passValue, ' ,TFA: ', this.tfa)
+          // console.log('API Data Saved Successfully')
+          // console.log(this.broker, ' => App Name: ', this.appname, ' ,User ID: ', this.userid, ' ,Password: ', this.passValue, ' ,TFA: ', this.tfa)
         }
       })
     },
@@ -236,8 +236,8 @@ export default {
     handleSubmit() {
       // Exit when the form isn't valid
       if (!this.checkFormValidity()) {
-        console.log('Invalid API Data')
-        console.log(this.broker, ' => App Name: ', this.appname, ' ,User ID: ', this.userid, ' ,Password: ', this.passValue, ' ,TFA: ', this.tfa)
+        // console.log('Invalid API Data')
+        // console.log(this.broker, ' => App Name: ', this.appname, ' ,User ID: ', this.userid, ' ,Password: ', this.passValue, ' ,TFA: ', this.tfa)
         return
       }
       this.$nextTick(() => {
