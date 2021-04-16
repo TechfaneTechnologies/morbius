@@ -1,0 +1,19 @@
+domains:
+- domain: trade.morbius.app
+  type: PRIMARY
+name: morbius
+region: blr
+services:
+- build_command: yarn build
+  environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: ShabbirHasan1/morbius
+  http_port: 80
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: morbius
+  routes:
+  - path: /
+  run_command: yarn serve
