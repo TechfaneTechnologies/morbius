@@ -44,4 +44,9 @@ module.exports = {
       })
   },
   transpileDependencies: ['vue-echarts', 'resize-detector'],
+  devServer: {
+    compress: true,
+    disableHostCheck: true,
+    public: 'trade.morbius.app'
+  },
 }
