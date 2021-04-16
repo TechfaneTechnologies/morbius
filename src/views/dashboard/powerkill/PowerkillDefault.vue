@@ -177,6 +177,7 @@ export default {
       // console.log(selectedbrokers)
       if (variant === 'yes') {
         // console.log('PowerKilled at All Brokers: ', JSON.stringify(this.BrokerSelection))
+        this.BrokerSelection = selectedbrokers
       } else {
         // console.log('PowerKilled Cancelled at All Brokers: ', JSON.stringify(this.BrokerSelection))
         this.BrokerSelection = []

@@ -334,11 +334,14 @@ export default {
       // console.log(selectedbrokers)
       if (variant === 'yes') {
         // console.log('The DateTime Squareoff Order has been sent to these brokers: ', JSON.stringify(this.selectedBrokers), 'Date: ', this.datevalue, ', Time: ', this.timevalue)
+        this.selectedBrokers = selectedbrokers
+        this.datevalue = ''
+        this.timevalue = ''
       } else {
         // console.log('The DateTime Squareoff Cancellation Order has been sent to these brokers: ', JSON.stringify(this.selectedBrokers), 'Date: ', this.datevalue, ', Time: ', this.timevalue)
-        // this.selectedBrokers = []
-        // this.datevalue = ''
-        // this.timevalue = ''
+        this.selectedBrokers = []
+        this.datevalue = ''
+        this.timevalue = ''
       }
     },
     ShowCancelToast2(variant, timeout) {

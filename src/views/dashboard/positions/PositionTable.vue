@@ -533,14 +533,14 @@ export default {
       // console.log(selected, selectedRows)
       // selectedRows contains all selected rows
     },
-    toggleSelectRow(params) {
-      // row that was clicked
-      // console.log(params.row)
-      // index of page
-      // console.log(params.pageIndex)
-      // whether the row was selected or unselected
-      // console.log(params.selected)
-    },
+    // toggleSelectRow(params) {
+    //   // row that was clicked
+    //   // console.log(params.row)
+    //   // index of page
+    //   // console.log(params.pageIndex)
+    //   // whether the row was selected or unselected
+    //   // console.log(params.selected)
+    // },
     toggleAutoSelectAll() {
       this.rows.forEach(item => {
         if (!item.vgtSelected) {
@@ -592,7 +592,7 @@ export default {
               confirmButton: 'btn btn-success',
             },
           })
-          const rowsdata = this.rowSelection
+          // const rowsdata = this.rowSelection
           // console.log('Exit: ', rowsdata.length, 'Data: ', JSON.stringify(rowsdata))
           this.toggleCustomSelection()
         } else if (result.dismiss === 'cancel') {
@@ -648,7 +648,7 @@ export default {
                 confirmButton: 'btn btn-success',
               },
             })
-            const rowsdata = this.rowSelection
+            // const rowsdata = this.rowSelection
             // console.log('Convert: ', this.convertval.convert, 'Total Conversions: ', rowsdata.length, 'Data: ', JSON.stringify(rowsdata))
             this.convertval = ''
             this.toggleCustomSelection()

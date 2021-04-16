@@ -87,10 +87,7 @@
       :bordered="false"
       style-class="vgt-table condensed striped"
       compact-mode
-      @on-select-all="onSelectAll"
       @on-search="onSelectAll"
-      @on-row-mouseenter="onMouseover"
-      @on-row-mouseleave="onMouseover"
       @on-row-dblclick="toggleExpansion"
       @on-selected-rows-change="selectionChanged1"
     >
@@ -598,12 +595,12 @@ export default {
       // this.$refs.groupedTable.collapseAll()
       this.$refs.PositionsTable.collapseAll()
     },
-    onSelectAll(params) {
-      // console.log(params)
-    },
-    onMouseover(params) {
-      // console.log(params)
-    },
+    // onSelectAll(params) {
+    //   // console.log(params)
+    // },
+    // onMouseover(params) {
+    //   // console.log(params)
+    // },
     toggleExpansion(row) {
       if (this.showExpansion(row)) {
         this.expandedIds = this.expandedIds.filter(id => id !== row.id)
@@ -664,14 +661,14 @@ export default {
       // console.log(selected, selectedRows)
       // selectedRows contains all selected rows
     },
-    toggleSelectRow1(params) {
-      // row that was clicked
-      // console.log(params.row)
-      // index of page
-      // console.log(params.pageIndex)
-      // whether the row was selected or unselected
-      // console.log(params.selected)
-    },
+    // toggleSelectRow1(params) {
+    //   // row that was clicked
+    //   // console.log(params.row)
+    //   // index of page
+    //   // console.log(params.pageIndex)
+    //   // whether the row was selected or unselected
+    //   // console.log(params.selected)
+    // },
     toggleAutoSelectAll1() {
       this.rows.forEach(item => {
         if (!item.vgtSelected) {
@@ -723,7 +720,7 @@ export default {
               confirmButton: 'btn btn-success',
             },
           })
-          const rowsdata1 = this.rowSelection1
+          // const rowsdata1 = this.rowSelection1
           // console.log('Exit: ', rowsdata1.length, 'Data: ', JSON.stringify(rowsdata1))
           this.toggleCustomSelection1()
         } else if (result.dismiss === 'cancel') {
@@ -779,7 +776,7 @@ export default {
                 confirmButton: 'btn btn-success',
               },
             })
-            const rowsdata1 = this.rowSelection1
+            // const rowsdata1 = this.rowSelection1
             // console.log('Convert: ', this.convertval1.convert, 'Total Conversions: ', rowsdata1.length, 'Data: ', JSON.stringify(rowsdata1))
             this.convertval1 = ''
             this.toggleCustomSelection1()
